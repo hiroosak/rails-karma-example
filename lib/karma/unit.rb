@@ -11,6 +11,7 @@ module Karma
       end
 
       files = environments.find_asset("unit.js").to_a.map {|e| e.pathname.to_s }
+      files << Rails.root.join("test/karma/unit/*_test.js").to_s
       files << Rails.root.join("test/karma/unit/*_test.coffee").to_s
 
       puts "--> Karma.start!"
