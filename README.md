@@ -1,1 +1,11 @@
-Rails app with karma
+# Rails app with karma
+
+## install
+```
+npm install -g karma
+bundle install
+```
+## action
+```
+rake test:karma:unit 
+```
